@@ -7,6 +7,12 @@ Learnings of Angular,NodeJS,JavaScript
 
 
 ```typescript
+ng new myportfolio
+cd myportfolio
+npm install --save-dev @angular-devkit/build-angular
+npm install -g @angular/cli
+npm install bootstrap@3.3.7 --save
+npm i typescript@3.4.5 --save-dev --save-exact
 ng g c layouts/default --skipTests false
-
+ng g c home --spec false
 ```
