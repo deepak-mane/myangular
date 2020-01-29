@@ -10,6 +10,15 @@ Learnings of Angular,NodeJS,JavaScript
 ng new myportfolio
 cd myportfolio
 ng add @angular/material
+Choose a prebuilt theme name, or "custom" for a custom theme: Indigo/Pink
+Set up HammerJS for gesture recognition? Yes
+Set up browser animations for Angular Material? Yes
+
+npm config set registry http://registry.npmjs.org/ --global
+npm i highcharts-angular --save
+npm i highcharts --save
+npm i @angular/flex-layout @angular/cdk --save
+
 npm install --save-dev @angular-devkit/build-angular
 npm install -g @angular/cli
 npm install bootstrap@3.3.7 --save
