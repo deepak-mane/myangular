@@ -26,9 +26,19 @@ npm i highcharts-angular --save
 npm i highcharts --save
 npm i @angular/flex-layout @angular/cdk --save
 
+=======Layout definition=========
+1. Create first layout
+2. Create a Component for the Dashboard page
+3. Use the first layout as a Parent Route Component in app-routing.module.ts and the Dashboard page as child Component
 
 ng g c layouts/default --skipTests false
 ng g m layouts/default
 ng g c modules/dashboard --skipTests false
 
+4. Import     DefaultComponent, DashboardComponent into default.module.ts under @NgModule declarations
+5. Remove them from app.module.ts and add DefaultModule in it
+6. Add Routes for DefaultComponent with children as DashboardComponent in app-routing.module.ts
+7. Add RouterModule to default.module.ts and <router-outlet></router-outlet> to default.component.html
+
+You should see dashboard works! on http://localhost:4200/
 ```
