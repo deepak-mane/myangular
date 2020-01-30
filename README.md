@@ -65,4 +65,15 @@ ng g c modules/posts
 6. Remove post unnecessary declaration from app.module.ts file add them to default.module.ts
 7. Update children Route, for posts html page and component name as PostsComponent in app-routing.module.ts
 
+
+ng g c modules/posts
+ng g c modules/dept1 --skipTests false
+ng g c modules/users --skipTests false
+ng g c modules/users/user --skipTests false
+ng g c modules/dept1/apps --skipTests false
+ng g c modules/dept1/apps/edit-app --skipTests false
+ng g c modules/dept1/app1/servers --skipTests false
+ng g c modules/dept1/app1/servers/server --skipTests false
+ng g c modules/dept1/app1/servers/edit-server --skipTests false
+
 ```
