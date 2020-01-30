@@ -43,13 +43,26 @@ ng g c modules/dashboard --skipTests false
 
 4. Import     DefaultComponent, DashboardComponent into default.module.ts under @NgModule declarations
 5. Remove DefaultComponent, DashboardComponentfrom app.module.ts and add DefaultModule in it
-6. Add Routes for DefaultComponent with children as DashboardComponent in app-routing.module.ts
+6. Update Routes and set to '' for Component name as DefaultComponent and append children to it as DashboardComponent in app-routing.module.ts
 7. Add RouterModule to default.module.ts and <router-outlet></router-outlet> to default.component.html
 
 You should see dashboard works! on http://localhost:4200/
 =======Shared Modules definition=========
+In the default.component.html add tags for header,footer and sidebar and later replace them with actuals
+
 1. Create your Header,Sidebar and Footer components for better code organization
 2. Create a Shared Module for it
 3. Update the Module and add these Components in the Declaration and Exports sections.
+
+ng g c shared/components/header --skipTests false
+ng g c shared/components/sidebar --skipTests false
+ng g c shared/components/footer --skipTests false
+ng g m shared
+
+4. Remove header,sidebar,footer unnecessary declaration from app.module.ts file and add them to default
+5. Create component call posts under modules folder
+ng g c modules/posts
+6. Remove post unnecessary declaration from app.module.ts file add them to default.module.ts
+7. Update children Route, for posts html page and component name as PostsComponent in app-routing.module.ts
 
 ```
