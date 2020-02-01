@@ -1,18 +1,19 @@
-# Angualar | Services | AuthGaurd.service.ts
+# Angualar | Services | auth-gaurd.service.ts
 
 ```typescript
 import {
     CanActivate,
     ActivatedRouteSnapshot,
     RouterStateSnapshot,
-    Router
+    Router,
+    CanActivateChild
 } from "@angular/router";
 import { Observable } from "rxjs/Observable";
 import { Injectable } from "@angular/core";
 import { AuthService } from "./auth.service";
 
 @Injectable()
-export class AuthGaurd implements CanActivate {
+export class AuthGaurd implements CanActivate, CanActivateChild {
 
     constructor(private authService: AuthService,
         private router: Router) { }
@@ -29,7 +30,6 @@ export class AuthGaurd implements CanActivate {
                     }
                 }
             );
-
     }
 
     canActivateChild(route: ActivatedRouteSnapshot,
