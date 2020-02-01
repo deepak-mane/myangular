@@ -1,5 +1,7 @@
 Angular | Services | auth.service.ts
 
+- Fake Service created to replicate authentication service while building apps initially:
+
 ```typescript
 export class AuthService {
     loggedIn = false;
