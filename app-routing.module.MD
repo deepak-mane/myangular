@@ -1,5 +1,7 @@
 # Angular | app-routing.module.ts
 
+- Entire sample angular project uploaded under [here](./sample_prj/routing-start.zip)
+
 ```typescript
 import { NgModule } from "@angular/core";
 import { Routes, RouterModule } from "@angular/router";
